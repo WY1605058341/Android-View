@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
@@ -116,9 +117,27 @@ public class BasicAnimActivity extends AppCompatActivity implements View.OnClick
     }
 
     private void set() {
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.setanim);
-        //TODO 加载动画是 startAnimation
-        iv.startAnimation(animation);
+//        Animation animation = AnimationUtils.loadAnimation(this, R.anim.setanim);
+//        //TODO 加载动画是 startAnimation
+//        iv.startAnimation(animation);
+
+
+        AlphaAnimation alphaAnim = new AlphaAnimation(1.0f,0.1f);
+        ScaleAnimation scaleAnim = new ScaleAnimation(0.0f,1.4f,0.0f,1.4f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+        RotateAnimation rotateAnim = new RotateAnimation(0, 720, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+
+        AnimationSet setAnim=new AnimationSet(true);
+
+        setAnim.addAnimation(alphaAnim);
+        setAnim.addAnimation(scaleAnim);
+        setAnim.addAnimation(rotateAnim);
+
+        setAnim.setDuration(3000);
+        setAnim.setFillAfter(true);
+
+        iv.startAnimation(setAnim);
+
+
     }
 
 }
