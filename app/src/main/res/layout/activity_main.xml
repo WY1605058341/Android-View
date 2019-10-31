@@ -17,6 +17,12 @@
             android:layout_height="wrap_content"
             android:text="基础动画" />
 
+        <Button
+            android:id="@+id/btn_attribute_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画" />
+
 
     </LinearLayout>
 

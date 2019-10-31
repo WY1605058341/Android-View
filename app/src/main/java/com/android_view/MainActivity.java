@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.android_view.basic_anim.AttributeAnimationActivity;
 import com.android_view.basic_anim.BasicAnimActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -15,13 +16,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_basic_anim).setOnClickListener(this);
+        findViewById(R.id.btn_attribute_anim).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btn_basic_anim:
                 startActivity(new Intent(MainActivity.this, BasicAnimActivity.class));
+                break;
+            case R.id.btn_attribute_anim:
+                startActivity(new Intent(MainActivity.this, AttributeAnimationActivity.class));
                 break;
         }
     }

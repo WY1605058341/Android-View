@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".basic_anim.BasicAnimActivity"></activity>
+        <activity
+            android:name=".basic_anim.AttributeAnimationActivity"
+            android:label="属性动画"/>
+        <activity
+            android:name=".basic_anim.BasicAnimActivity"
+            android:label="基础的补间动画" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
