@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.android_view.basic_anim.AttributeAnimationActivity;
 import com.android_view.basic_anim.BasicAnimActivity;
+import com.qrcode.QRCodeMainActivity;
 import com.take_photo.TakingPhotoActivity;
 import com.take_photo.TakingPhotoChooseActivity;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_basic_anim).setOnClickListener(this);
         findViewById(R.id.btn_attribute_anim).setOnClickListener(this);
         findViewById(R.id.btn_photo).setOnClickListener(this);
+        findViewById(R.id.btn_qr_code).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_photo:
                 startActivity(new Intent(MainActivity.this, TakingPhotoChooseActivity.class));
+                break;
+            case R.id.btn_qr_code:
+                startActivity(new Intent(MainActivity.this, QRCodeMainActivity.class));
                 break;
         }
     }
