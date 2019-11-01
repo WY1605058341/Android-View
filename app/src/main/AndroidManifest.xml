@@ -10,12 +10,9 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-
     <uses-permission
         android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
         tools:ignore="ProtectedPermissions" />
@@ -30,7 +27,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,7 +34,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.qrcode.CaptureActivity"></activity>
+        <activity android:name=".basic_anim.PropertyValueActivity"></activity>
+        <activity android:name=".basic_anim.ObjectAnimatorActivity" />
+        <activity android:name="com.qrcode.CaptureActivity" />
         <activity android:name="com.qrcode.QRCodeMainActivity" />
         <activity android:name="com.take_photo.PhotoFragmentActivity" />
         <activity android:name="com.take_photo.TakingPhotoActivity" />

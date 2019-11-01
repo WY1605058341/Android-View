@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".basic_anim.ObjectAnimatorActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="start anim"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_dark"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Hello World" />
+
+        <Button
+            android:id="@+id/btn_stop_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="stop anim"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示点动画" />
+
+    <Button
+        android:id="@+id/btn_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置背景色的动画改变" />
+
+
+    <com.android_view.widget.MyPointView
+        android:id="@+id/point_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp" />
+
+
+</LinearLayout>

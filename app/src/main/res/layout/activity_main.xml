@@ -16,11 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="拍照或相册" />
+
         <Button
             android:id="@+id/btn_qr_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="二维码" />
+
         <Button
             android:id="@+id/btn_basic_anim"
             android:layout_width="match_parent"
@@ -32,6 +34,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="属性动画" />
+
+        <Button
+            android:id="@+id/btn_attribute_anim_object_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画-Value Animator"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_property_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿电话抖动"
+            android:textAllCaps="false" />
 
 
     </LinearLayout>
