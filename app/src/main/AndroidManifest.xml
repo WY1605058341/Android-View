@@ -34,7 +34,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".basic_anim.PropertyValueActivity"></activity>
+        <activity android:name=".WatchBoardActivity"></activity>
+        <activity android:name=".refresh_more.RefreshMoreActivity" />
+        <activity android:name=".basic_anim.PropertyValueActivity" />
         <activity android:name=".basic_anim.ObjectAnimatorActivity" />
         <activity android:name="com.qrcode.CaptureActivity" />
         <activity android:name="com.qrcode.QRCodeMainActivity" />

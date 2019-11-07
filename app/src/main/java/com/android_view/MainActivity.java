@@ -10,6 +10,7 @@ import com.android_view.basic_anim.AttributeAnimationActivity;
 import com.android_view.basic_anim.BasicAnimActivity;
 import com.android_view.basic_anim.ObjectAnimatorActivity;
 import com.android_view.basic_anim.PropertyValueActivity;
+import com.android_view.refresh_more.RefreshMoreActivity;
 import com.qrcode.QRCodeMainActivity;
 import com.take_photo.TakingPhotoChooseActivity;
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_qr_code).setOnClickListener(this);
         findViewById(R.id.btn_attribute_anim_object_animator).setOnClickListener(this);
         findViewById(R.id.btn_property_value).setOnClickListener(this);
+        findViewById(R.id.btn_refresh_more).setOnClickListener(this);
+        findViewById(R.id.btn_watch_board).setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_property_value:
                 startActivity(new Intent(MainActivity.this, PropertyValueActivity.class));
+                break;
+            case R.id.btn_refresh_more:
+                startActivity(new Intent(MainActivity.this, RefreshMoreActivity.class));
+                break;
+            case R.id.btn_watch_board:
+                startActivity(new Intent(MainActivity.this, WatchBoardActivity.class));
                 break;
         }
     }

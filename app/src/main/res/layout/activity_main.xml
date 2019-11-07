@@ -24,6 +24,12 @@
             android:text="二维码" />
 
         <Button
+            android:id="@+id/btn_refresh_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新和上拉加载" />
+
+        <Button
             android:id="@+id/btn_basic_anim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,6 +53,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="仿电话抖动"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_watch_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义钟表盘"
             android:textAllCaps="false" />
 
 
